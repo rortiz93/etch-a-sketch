@@ -1,0 +1,35 @@
+
+
+.grid{
+    border-radius: 2px;
+    border-color: black;
+}
+
+#container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    height: 800px;
+}
+
+#container>div:nth-child((16n + 1)) {
+    width: 100% !important;
+  }
+#container>div {
+    border: 1px solid black;
+    height: 50px;
+    width: 50px;
+    flex: 1 1 auto;
+   
+  }
+
+  * { 
+    box-sizing: border-box;
+  }
+
+  #container > div:first-child {
+    columns: 10em;
+    flex-grow: 2;    
+}
